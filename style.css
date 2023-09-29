@@ -30,6 +30,10 @@ ul li:hover{
   text-decoration: line-through;
 }
 
+i{
+  z-index: 999;
+}
+
 i:hover{
   cursor: pointer;
   color: red;

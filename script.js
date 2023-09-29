@@ -32,8 +32,11 @@ createApp({
         this.isError = false;
       }
     },
-    removeTask(i){
-      this.tasks.splice(i, 1);
+    removeTask(event, i){
+      if(this.tasks[i].done){
+        this.tasks.splice(i, 1);
+      }
+      event.stopPropagation();  // NON FUNZIONA
     },
     isDone(i){
       this.tasks[i].done = !this.tasks[i].done;
