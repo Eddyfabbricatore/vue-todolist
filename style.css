@@ -39,6 +39,10 @@ i:hover{
   width: 300px;
 }
 
+.error{
+  color: red;
+}
+
 .task-container{
   background-color: var(--bg-taskContainer);
 }
